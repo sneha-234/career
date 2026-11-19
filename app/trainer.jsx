@@ -30,7 +30,7 @@ export default function Trainer({ adminPage = false }) {
     <div className="min-h-screen" data-trainer-page={adminPage ? "admin" : "employee"}>
       <header className="trainer-header sticky top-0 z-30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 trainer-header-inner">
-          <div className="trainer-brand">
+          <a className="trainer-brand" href="/landing">
             <img
               className="trainer-logo"
               src="/lotus-logo.png"
@@ -39,7 +39,7 @@ export default function Trainer({ adminPage = false }) {
               alt="Lotus Electronics Supermarket"
             />
             <div className="trainer-brand-name font-display" data-i18n="appName">Sales Knowledge Trainer</div>
-          </div>
+          </a>
           <div className="trainer-header-actions">
             <div id="userChip" className="hidden text-sm px-3 py-1.5 rounded-full" style={{ background: "var(--surface-2)", color: "var(--ink-soft)" }}></div>
             <div className="lang-toggle" role="group" aria-label="Language toggle">
@@ -107,7 +107,7 @@ export default function Trainer({ adminPage = false }) {
                   <input type="password" id="adminPasswordInput" autoComplete="off" />
                   <div id="adminLoginError" className="hidden text-sm mt-2 px-3 py-2 rounded-lg" style={{ background: "var(--danger-soft)", color: "var(--danger)" }}></div>
                   <button type="submit" className="btn btn-primary w-full mt-5" data-i18n="adminLoginButton">Log In as Admin</button>
-                  <a className="trainer-login-switch" href="/" data-i18n="backToLogin">Back to employee login</a>
+                  <a className="trainer-login-switch" href="/login" data-i18n="backToLogin">Back to employee login</a>
                 </form>
               )}
             </div>

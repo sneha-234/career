@@ -1,5 +1,5 @@
-import Trainer from "./trainer-entry";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return <Trainer />;
+  redirect("/landing");
 }
