@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^$ /landing [R=307,END]

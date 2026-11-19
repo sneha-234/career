@@ -574,7 +574,7 @@ export function mountAssessment(appRoot, modalRoot, { admin: adminRoute = false 
     setLang(el) { S.lang = el.dataset.l; LS.set('lx_lang', S.lang); render(); },
     toCheck() {
       if (adminRoute) {
-        location.replace('/');
+        location.replace('/landing');
         return;
       }
       S.view = 'check'; S.err = ''; history.replaceState(null, '', location.pathname); render();
